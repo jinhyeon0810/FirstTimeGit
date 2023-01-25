@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+.dimmed-layer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.order-type-popup {
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 32px;
+  padding-bottom: 40px;
+  border-radius: 20px 20px 0 0;
+}
+.order-type-popup .title {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+}
+.order-type-popup .order-type-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order-type-popup .order-type-list {
+  flex: 1;
+  text-align: center;
+}
+.order-type-popup .order-type-list:nth-of-type(2) {
+  border-left: 1px solid rgb(195, 194, 194);
+}
+.order-type-popup .order-text {
+  font-size: 17px;
+  font-weight: 560;
+}
+.order-type-popup .c-btn {
+  background-color: rgb(50, 48, 48);
+  color: white;
+  border-radius: 28px;
+  padding: 6px 18px;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  color: rgb(20, 204, 20);
+}
+
+.wrap {
+  min-height: 100vh;
+}
+.wrap .inner-common {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.wrap .inner-common .menu-tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px 0 0;
+  background-color: rgb(105, 211, 105);
+  color: white;
+  font-weight: 700;
+}
+.wrap .inner-common .menu-tab .menu-txt {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.wrap .inner-common .tab-area {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  background-color: rgb(80, 153, 80);
+  padding: 10px 20px 10px 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.wrap .inner-common .tab-area .tab {
+  position: relative;
+}
+.wrap .inner-common .tab-area .tab:nth-child(2) {
+  color: white;
+  font-weight: bold;
+}
+.wrap .inner-common .tab-area .tab:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  right: 0;
+  left: 0;
+  height: 2px;
+  background-color: #fff;
+}
+.wrap .inner-common .top-area {
+  padding: 15px 20px;
+  background-color: rgba(207, 255, 250, 0.5);
+}
+.wrap .inner-common .top-area .inner-top-area {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.wrap .inner-common .top-area .inner-top-area .top-text {
+  display: flex;
+  font-size: 18px;
+}
+.wrap .inner-common .top-area .inner-top-area .top-text .ico-n-logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+.wrap .inner-common .order-choice {
+  display: flex;
+  margin-top: 12px;
+  background-color: rgba(0, 0, 0, 0.05);
+  text-align: center;
+  align-items: center;
+}
+.wrap .inner-common .order-choice .to-go,
+.wrap .inner-common .order-choice .here,
+.wrap .inner-common .order-choice .deliv {
+  flex: 1;
+  line-height: 40px;
+}
+.wrap .inner-common .order-choice .to-go {
+  position: relative;
+  background-color: white;
+  border: 1px solid black;
+}
+.wrap .inner-common .order-choice .to-go::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  border-width: 0 1px 1px 0;
+  bottom: -10px;
+  left: 50%;
+  transform: rotate(45deg) translateX(-50%);
+  background-color: white;
+}
+.wrap .inner-common .order-choice .to-go .ico-check {
+  margin-left: -1px;
+  vertical-align: center;
+}
+.wrap .inner-common .order-text {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 10px;
+}
