@@ -1,0 +1,103 @@
+/* CSS 작성 */
+.wrap {
+  width: 1050px;
+  height: 1300px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+header {
+  display: flex;
+  position: relative;
+  top: 100px;
+  width: 1050px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  left: 14px;
+  width: 176px;
+  height: 40px;
+  border: none;
+}
+
+section {
+  position: relative;
+  top: 109px;
+  bottom: 261px;
+  margin: 0 auto;
+  min-height: 1022px;
+  max-width: 1050px;
+}
+
+.section-area {
+  position: absolute;
+  bottom: 0px;
+}
+
+article {
+  position: relative;
+  padding: 0;
+  display: flex;
+  float: left;
+  margin-left: 14px;
+  margin-bottom: 14px;
+}
+
+article a {
+  height: 310px;
+}
+
+article a .icons {
+  position: absolute;
+  background-color: var(--color-background1);
+  bottom: 20px;
+  left: 20px;
+  transition: all 1.2s;
+  display: flex;
+  align-items: center;
+}
+
+.icons:hover::before {
+  content: "구매하기";
+  padding-left: 12px;
+  color: var(--color-text2);
+}
+
+.icons:hover {
+  background-color: var(--color-border2);
+}
+
+article a:focus {
+  outline: 1px solid var(--color-border2);
+}
+
+h2 {
+  padding-left: 14px;
+  font-weight: 500;
+  line-height: 115%;
+  font-size: 24px;
+}
+
+h2 span {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-text1);
+}
+
+img {
+  border: 1px solid var(--color-border1);
+}
+
+img:hover {
+  border: 1px solid var(--color-border2);
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    width: 100%;
+  }
+}
