@@ -42,3 +42,17 @@ h4 {
 3. 원할 때 최종스타일로 변하라고함
 4. transition 추가 (시작지점에) 
 애니메이션 사용시 display none 보단 visibility hidden 써야함*/
+
+.slide-container {
+  width: 300vw;
+  transition: all 1s;
+}
+
+.slide-box {
+  width: 100vw;
+  float: left;
+}
+
+.slide-box img {
+  width: 100%;
+}
