@@ -72,6 +72,20 @@ function refill(){
 }
 console.log(refill());
 
+
+function 단위변환(num, num2){
+  let result = (num * 60 + num2)*1000
+  return result;
+}
+ 
+console.log(단위변환(1,30))
+ 
+ 
+
+
+
+
+
 //UI 퀴즈
 let 횟수 = 0;  
 const sendAnswer = document.getElementById('send-answer');
@@ -93,7 +107,6 @@ sendAnswer.addEventListener('click', ()=>{
 
 //안됬던이유, 우선 js파일과 html 파일 연도잉 안되어있었음
 // value값을 innerHTML로 적음...
-
 
 
 
