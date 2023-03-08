@@ -34,3 +34,7 @@ ul.list::after {
 .show {
   display: block;
 }
+
+#new {
+  display: none;
+}

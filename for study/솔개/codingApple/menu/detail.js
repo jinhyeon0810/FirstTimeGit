@@ -55,3 +55,31 @@ function 탭열기(숫자){
 let car2 = {name : 'sonata', price : '5man'};
 
 document.getElementsByClassName('card p-3')[0].innerHTML = `${car2.name} / ${car2.price}`;
+
+
+//셔츠 클릭하면 밑에 select 하나 더생김
+const selectNew = document.getElementById('new');
+const formselect = document.querySelectorAll('.form-select.mt-2')[0];
+
+const 바지내용 = `<option>28</option>
+<option>30</option>`
+
+const 원래내용 = ` <option>95</option>
+<option>100</option>`
+
+formselect.addEventListener('click', ()=>{
+    selectNew.style.display = 'none';
+    let value = formselect.value;
+    if(value == '셔츠'){
+        selectNew.style.display= 'block';
+        selectNew.innerHTML= 원래내용;
+    } else if
+    (value == '바지'){
+     selectNew.style.display = 'block';
+     selectNew.innerHTML = 바지내용; 
+
+    }
+})
+
+
+
