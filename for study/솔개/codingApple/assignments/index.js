@@ -80,10 +80,6 @@ function 단위변환(num, num2){
  
 console.log(단위변환(1,30))
  
- 
-
-
-
 
 
 //UI 퀴즈
@@ -109,5 +105,44 @@ sendAnswer.addEventListener('click', ()=>{
 // value값을 innerHTML로 적음...
 
 
+var 출석부 = ['흥민','영희','철수','재석'];
 
+function 이름찾기(para){
+  for(let i =0; i<출석부.length; i++){
+    if(출석부[i] == para ){
+      console.log('있음')
+      return;
+    } else{
+      console.log('없다')
+    }
+  }
+}
 
+// 구구단을 외자 구구단을 외자
+
+function 구구단(){
+  for(let i =2; i<10; i++){
+    for(let j=1; j<10; j++){
+      console.log (`${i} x ${j} = ${i * j}`);
+    }
+  }
+}
+
+//평균점수 측정해주는 동작 
+var result = 0;
+let ave = 0;
+
+function 평가(arr, b){
+  for(let i =0; i<arr.length; i++){
+    result = result + arr[i]
+  }
+  ave = result/arr.length
+
+  if(ave-b>0){
+    console.log(`${ave-b} 차이로 재수 해야겠네요`)
+  } else{
+    console.log(`${b-ave} 차이로 합격 하시겠네여`)
+  }
+}
+
+평가([1,2,3]);
