@@ -1,0 +1,19 @@
+.grey {
+  background-color: lightgray;
+  height: 2000px;
+  margin-top: 500px;
+}
+
+.image {
+    width:400px;
+    float:right;
+    position : sticky;
+    top : 100px;
+}
+
+.text{
+    width:300px;
+    foat: left;
+}
+
+.

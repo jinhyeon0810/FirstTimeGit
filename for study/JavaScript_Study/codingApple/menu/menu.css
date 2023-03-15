@@ -1,0 +1,19 @@
+.list-group {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+.navbar-brand {
+  font-size: 50px;
+  color: blue;
+  transition: all 1s;
+}
