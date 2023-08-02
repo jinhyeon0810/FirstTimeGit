@@ -1,0 +1,123 @@
+.wrap{
+    min-height:100vh;
+    .inner-common{
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        width:100%;
+        .menu-tab{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:0 15px 0 0;
+            background-color: rgb(105, 211, 105);
+            color:white;
+            font-weight: 700;
+
+            .menu-txt{
+                display:flex;
+                align-items: center;
+                font-size: 20px;
+            }
+        }
+        .tab-area{
+            display:flex;
+            align-items: center;
+            text-align: center;
+            justify-content: space-around;
+            
+            background-color: rgb(80, 153, 80);
+            padding: 10px 20px 10px 20px;
+            color:rgba(255, 255, 255, 0.5);
+
+            .tab{
+                
+                position:relative;
+                &:nth-child(2){
+                  color:white;
+                  font-weight: bold;
+                  &::after{
+                    content:"";
+                    position:absolute;
+                    bottom:-11px;
+                    right:0;
+                    left:0;
+                    
+                    height:2px;
+                    
+                    background-color: #fff;
+                  }
+                    
+                }
+            }
+        }
+        .top-area{
+            padding:15px 20px;
+            background-color:rgb(207, 255, 250,0.5);
+            
+            .inner-top-area{
+                max-width:720px;
+                margin:0 auto;
+
+            
+            .top-text{
+                display:flex;
+                font-size: 18px;
+                
+
+                .ico-n-logo{
+                    width:24px;
+                    height:24px;
+                    margin-right:5px;
+                }
+            }
+        }
+    }
+        .order-choice{
+            display:flex;
+            margin-top:12px;
+            background-color: rgba(0,0,0,0.05);
+            text-align: center;
+            align-items: center;
+            
+            .to-go,
+            .here,
+            .deliv{
+                flex:1;
+                line-height:40px;
+            
+            }
+
+            .to-go{
+                position:relative;
+                background-color: white;
+                border:1px solid black;
+                ;
+
+                &::before{
+                    content:"";
+                    position:absolute;
+                    width:10px;
+                    height:10px;
+                    border:1px solid black;
+                    border-width: 0 1px 1px 0;
+                    bottom:-10px;
+                    left:50%;      
+                    transform: rotate(45deg) translateX(-50%);
+                    background-color:white;
+                }
+                .ico-check{
+                    margin-left:-1px;
+                    vertical-align: center;
+                }  
+            }        
+        }
+        .order-text{
+            margin-top:20px;
+            background-color: #fff;
+            padding:10px;
+        }
+
+    }
+}

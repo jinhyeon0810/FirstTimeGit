@@ -1,0 +1,135 @@
+/* 오늘의 쇼핑 제안 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  margin: 100px auto 48px auto;
+
+  overflow: hidden;
+}
+
+h1 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+picture img {
+  margin-left: 13px;
+  width: 176px;
+  height: 40px;
+}
+
+section {
+  width: 100%;
+
+  margin: 0 auto;
+  min-width: 200px;
+  overflow: hidden;
+}
+
+.section-area {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.section-icon {
+  margin-left: 13px;
+  background: url(/Mission-02/assets/icon/shopping.svg) no-repeat;
+  background-size: auto;
+}
+
+h2 {
+  width: 100%;
+  margin-bottom: 24px;
+  margin-left: 30px;
+  font-size: 24px;
+  line-height: 27.6px;
+  font-weight: 500;
+  color: var(--color-back);
+}
+
+.shopping-list-area {
+  margin-top: 33px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  flex: 1;
+}
+
+.shopping-item {
+  position: relative;
+}
+
+.per {
+  position: absolute;
+  top: -10px;
+  left: 7%;
+  padding: 3px 10px;
+  background-color: var(--color-red-500);
+  color: var(--color-white);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.item-img {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.item-txt {
+  margin-top: 12px;
+  padding: 0;
+  margin-bottom: 12px;
+}
+.free-txt {
+  display: block;
+}
+
+.item-area {
+  margin: 0 33px;
+
+  font-size: 14px;
+}
+
+.icon-img {
+  display: block;
+}
+
+.star-img {
+  background: url(/Mission-02/assets/sprites/rating-stars.png) no-repeat;
+  background-size: auto;
+
+  width: 68px;
+  height: 12px;
+  background-color: var(--color-white);
+  display: inline-block;
+  margin-top: 4px;
+  margin-right: 4px;
+}
+
+.point {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  color: var(--color-gray-700);
+}
+
+#first {
+  margin-top: 0;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="modal.css" />
+  </head>
+  <body>
+    <div class="black-bg">
+      <div class="white-bg">
+        <h4>로그인하세요</h4>
+
+        <form action="success.html">
+          <!-- form은 서버로 유저 정보 전송하는데 쓰임-->
+          <div class="my-3">
+            <input type="text" class="form-control" />
+          </div>
+          <div class="my-3">
+            <input type="password" class="form-control" />
+          </div>
+          <button type="submit" class="btn btn-primary">전송</button>
+          <button type="button" class="btn-danger" id="close">닫기</button>
+        </form>
+      </div>
+    </div>
+
+    <button class="log-in">로그인</button>
+
+    <span class="badge bg-dark">Dark 🔄</span>
+
+    <div class="alert alert-danger">
+      <span class="alertspan">5</span>초이내 구매시 사은품 증정!
+    </div>
+
+    <div style="overflow: hidden">
+      <div class="slide-container">
+        <div class="slide-box">
+          <img src="imgs/one.png" draggable="false" />
+        </div>
+        <div class="slide-box">
+          <img src="imgs/auto.png" alt="" />
+        </div>
+        <div class="slide-box">
+          <img src="imgs/car3.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <button class="btn1">1</button>
+    <button class="btn2">2</button>
+    <button class="btn3">3</button>
+    <button class="next">다음</button>
+
+    <script src="modal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#formSection {
+  background-color: white;
+  border: 1px solid lightgray;
+  width: 330px;
+
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+  margin: 0 auto;
+}
+
+img {
+  width: 290px;
+}
+
+p {
+  color: rgb(142, 142, 142);
+  font-weight: bold;
+  font-size: 14px;
+  align-items: center;
+  margin: 10px;
+}
+
+button {
+  background-color: #3b5998;
+  color: white;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  padding: 5px 8px;
+}
+
+.divider {
+  display: grid;
+  width: 230px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 250px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-style {
+  padding: 9px 0 7px 8px;
+  background-color: rgb(250, 250, 250);
+  color: rgb(38, 38, 38);
+  margin-bottom: 10px;
+  font-size: 16px;
+  height: 35px;
+  border: 1px solid lightgray;
+}
+
+.input-style::placeholder {
+  font-size: 12px;
+}
+
+input:active,
+input:focus {
+  outline: none;
+  border: 1px solid lightgray;
+}
+.submit-style {
+  background-color: lightskyblue;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  padding: 9px 0 7px 8px;
+}

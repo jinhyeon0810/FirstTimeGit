@@ -1,0 +1,8 @@
+/* Theme 스타일 작성 */
+:root {
+  --color-text1: #aaa9a9;
+  --color-text2: #ffffff;
+  --color-border1: #c4c4c4;
+  --color-border2: #0074e9;
+  --color-background1: rgba(0, 0, 0, 0.2);
+}
